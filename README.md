@@ -22,7 +22,7 @@ A simple, responsive recipe website built using HTML and CSS. This project is de
 
 ## Demo
 
-##Link to live demo [(https://jiggythedev.github.io/recipe-page/)](#)
+- **Link to live demo** [(https://jiggythedev.github.io/recipe-page/)](#)
 
 ## Features
 
