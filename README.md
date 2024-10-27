@@ -1,4 +1,8 @@
+#Recipe website
 
+A simple recipe website built using HTML and CSS.
+
+![Recipe website preview](design/desktop-design.jpg)
 
 ---
 
