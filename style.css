@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --font-size: 16px;
+    --font-weight-1: 400;
+    --font-weight-2: 600;
+    --font-weight-3: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Stone-100);
+    padding: .5rem;
+}
+
+.container {
+    height: 100%;
+    width: 48vw;
+    border-radius: 17px;
+    background-color: var(--White);
+    overflow: hidden;
+}
+
+.image {
+    border-radius: 14px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe {
+    text-align: start;
+    margin: 1.5rem;
+}
+
+.recipe h1 {
+    font-weight: var(--font-weight-1);
+    font-size: 40px;
+    font-family: 'Young Serif';
+    line-height: 2.5;
+}
+
+.recipe p {
+    font-family: 'Outfit';
+    color: var(--Stone-600);
+}
+
+.time {
+    border: 1px solid var(--Stone-100);
+   /*  height: 25vh; */
+    line-height: 2;
+    margin: 1.5rem;
+    background-color: var(--Stone-100);
+    border-radius: 10px;
+}
+
+.time-content {
+    margin: 1rem auto;
+    margin-left: 1rem;
+}
+
+.time-content h2 {
+    color: var(--Rose-800);
+}
+
+.time-content p {
+    font-weight: var(--font-weight-3);
+    font-family: 'Outfit';
+    font-size: 26px;
+    color: var(--Rose-800);
+}
+
+.time-content b {
+    font-weight: var(--font-weight-2);
+    font-family: 'Outfit';
+    color: #000;
+}
+
+.time-content li {
+    color: var(--Brown-800);
+}
+
+small {
+    color: hsl(0, 0%, 20%);
+    font-size: 16px;
+    font-family: 'Outfit';
+}
+
+.ingre {
+    margin: 1.5rem;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--Stone-150);
+    padding-bottom: 1.5rem;
+}
+
+.ingre-content li {
+    color: var(--Rose-800);
+    font-family: 'Outfit';
+    font-size: var(--font-size);
+}
+
+.ingre-content p {
+    font-family: 'Young serif';
+    font-size: 26px;
+    color: var(--Brown-800);
+    font-weight: var(--font-weight-1);
+}
+
+.ingre-content small {
+    margin-left: .5rem;
+}
+
+.guide {
+    line-height: 1.5;
+    border-bottom: 1px solid var(--Stone-150);
+    padding-bottom: 1.rem;
+    margin: 1rem;
+}
+
+.guide-content {
+    margin: .4rem;
+}
+
+.guide-content p {
+    color: var(--Brown-800);
+    font-family: 'Young serif';
+    font-weight: var(--font-weight-1);
+    font-size: 26px;
+}
+
+.guide-content ol {
+    margin: 1rem;
+    color: var(--Brown-800);
+}
+
+.guide-content li {
+    text-align: start;
+    color: #000000ab;
+    font-family: 'Outfit';
+    font-size: var(--font-size);
+}
+
+.guide-content b {
+    color: hsla(0, 0%, 0%, 0.788);
+    font-family: 'Outfit';
+}
+
+.nutrition {
+    margin: 1.4rem;
+}
+
+.nutrition p:first-child {
+    color: var(--Brown-800);
+    font-weight: var(--font-weight-1);
+    font-size: 26px;
+    font-family: 'Young Serif';
+}
+
+.nutrition p:nth-child(2) {
+    color: #000000ab;
+    font-size: var(--font-size);
+    font-family: 'Outfit';
+    padding-bottom: .5rem;
+}
+
+table {
+    width: 90%;
+    margin: auto 1rem;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+td {
+    color: #000000ab;
+    font-family: 'Outfit';
+    font-size: 15px;
+    padding: .5rem;
+}
+
+td.alph {
+    color: var(--Brown-800);
+    font-weight: var(--font-weight-3);
+}
+
+tr.last {
+    border-bottom: transparent;
+}
+
+.attribution {
+    padding: 1rem;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Brown-800);
+}
+
+.attribution a:hover,:visited {
+    color: var(--White);
+    text-decoration: underline;
+}
+
+
+@media (min-width:320px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 70vw;
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        width: 48vw;
+    }
+}
+
+@media (min-width:1440px) {
+    .container {
+        width: 60vw;
+    }
+}
