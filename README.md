@@ -1,4 +1,4 @@
-## Recipe website
+# Recipe website
 
 A simple recipe website built using HTML and CSS.
 
